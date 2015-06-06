@@ -18,6 +18,17 @@ if(window.location.host != "www.immobilienscout24.de") {
 
     this.document.body.appendChild(close_button);
     this.document.body.appendChild(formular);
+
+    // add a watcher. alerts when change the site
+    var watcher = {};
+    watcher.url = this.window.location.href;
+
+    setInterval((function(href) {
+      if(watcher.url != this.window.location.href) {
+        watcher.url = this.window.location.href;
+        this.window.alert("Url Changed to " + watcher.url);
+      }
+    }).bind(this, watcher), 50);
   });
 
   [].slice.call(document.body.childNodes).map(function(e) {
@@ -25,7 +36,7 @@ if(window.location.host != "www.immobilienscout24.de") {
   });
 
   var header = document.createElement("h1");
-  header.appendChild(document.createTextNode("Immobilien Scout24 Resultgrabber"));
+  header.appendChild(document.createTextNode("Immobilien Scout24 Grabber"));
   document.body.appendChild(header);
 
   search_window("http://www.immobilienscout24.de/");
