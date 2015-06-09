@@ -8,10 +8,14 @@
 
 ### Installation
 
-1. run "make" in the project directory
-2. open the generated html-file
-3. bookmark the link
+1. Führe "make" im Projektordner aus
+2. Öffne die generierte Html-Datei im bevorzugten Browser
+3. Speichere den Link in den Lesezeichen
 
 ### Run
 
-Just run the bookmark.
+Einfach das Lesezeichen im Browser öffnen.
+
+### Todos
+
+* Spiele Ton ab nach Scan
