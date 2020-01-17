@@ -19,3 +19,5 @@ Einfach das Lesezeichen im Browser öffnen.
 ### Todos
 
 * Spiele Ton ab nach Scan
+* REST-Backend generieren
+* Front-End Push zu REST-Backend
